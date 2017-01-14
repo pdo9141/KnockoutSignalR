@@ -1,0 +1,12 @@
+﻿<ul data-bind="foreach: players" class="list-group">
+	<li class="list-group-item btn" data-bind="click: $root.displayPlayer" data-toggle="modal" data-target="#player-details">
+		<div>
+			<strong>
+				<span data-bind="text: fullName"></span>
+				- $<span data-bind="text: auctionAmount"></span>
+			</strong>
+		</div>
+		<div>(<span data-bind="text: nflTeam"></span> - <span data-bind="text: position"></span>)</div>
+		<div data-bind="text: team"></div>
+	</li>
+</ul>
