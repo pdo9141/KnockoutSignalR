@@ -126,6 +126,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="ReadMe.txt" />
     <Content Include="Scripts\appViewModel.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -154,6 +155,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Hubs\PlayerHub.cs" />
+    <Compile Include="Migrations\201701141830039_Initial.cs" />
+    <Compile Include="Migrations\201701141830039_Initial.Designer.cs">
+      <DependentUpon>201701141830039_Initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AuctionTrackerContext.cs" />
     <Compile Include="Models\NflTeam.cs" />
@@ -174,6 +179,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201701141830039_Initial.resx">
+      <DependentUpon>201701141830039_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
